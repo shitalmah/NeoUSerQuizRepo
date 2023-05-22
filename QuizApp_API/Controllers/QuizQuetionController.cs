@@ -6,7 +6,7 @@ using QuizApp_API.CQRS.User.Queries;
 
 namespace QuizApp_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class QuizQuetionController : ControllerBase
     {
@@ -15,11 +15,25 @@ namespace QuizApp_API.Controllers
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
 
-        [HttpGet]
-        public async Task<IActionResult> GetQuiz()
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetQuizId(int id)
         {
 
-            return Ok(await Mediator.Send(new GetAllQuiz()));
+            var quiz = await Mediator.Send(new GetQuizByUserid { id = id });
+            int QUIZid = quiz[0].Id;
+            return Ok(QUIZid);
+        }
+
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetQuetionsbyId(int id)
+        {
+
+           // var quiz = await Mediator.Send(new GetQuetionbyquizId { id = id });
+            
+            return Ok(await Mediator.Send(new GetQuetionbyquizId { id = id }));
         }
     }
 }
