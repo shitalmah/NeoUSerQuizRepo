@@ -68,3 +68,17 @@ C:\Users\Neosoft\Downloads\NeoQuizApi-feature-AddQuestionAnswerMappingApi\NeoQui
 C:\Users\Neosoft\Downloads\NeoQuizApi-feature-AddQuestionAnswerMappingApi\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.pdb
 C:\Users\Neosoft\Downloads\NeoQuizApi-feature-AddQuestionAnswerMappingApi\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.genruntimeconfig.cache
 C:\Users\Neosoft\Downloads\NeoQuizApi-feature-AddQuestionAnswerMappingApi\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\ref\QuickQuestionBank.Domain.dll
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\bin\Debug\net6.0\QuickQuestionBank.Domain.deps.json
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\bin\Debug\net6.0\QuickQuestionBank.Domain.runtimeconfig.json
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\bin\Debug\net6.0\QuickQuestionBank.Domain.dll
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\bin\Debug\net6.0\QuickQuestionBank.Domain.pdb
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.csproj.AssemblyReference.cache
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.AssemblyInfoInputs.cache
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.AssemblyInfo.cs
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.dll
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\refint\QuickQuestionBank.Domain.dll
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.pdb
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\QuickQuestionBank.Domain.genruntimeconfig.cache
+C:\Users\Neosoft\OneDrive\Desktop\QuizApp_Script\QuizApp_API\NeoQuizApi-feature-AddQuestionAnswerMappingApi\QuickQuestionBank.Domain\obj\Debug\net6.0\ref\QuickQuestionBank.Domain.dll

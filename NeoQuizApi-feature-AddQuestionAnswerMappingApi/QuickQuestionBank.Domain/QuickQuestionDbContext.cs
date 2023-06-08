@@ -14,6 +14,9 @@ namespace QuickQuestionBank.Domain {
         public DbSet<Quiz> Quiz { get; set; }
 
         public DbSet<User_Admin>  user_Admin { get; set; }
+        public DbSet<QuizOptionAnswer>  quizOptionAnswers { get; set; }
+
+        public DbSet<QuizTextAnswer>  quizTextAnswers { get; set; }
         public DbSet<QuizQuestion> QuizQuestions { get; set; }
         public DbSet<QuestionType> QuestionTypes { get; set; }
         public DbSet<QuestionAnswerMapping> QuestionAnswerMapping { get; set; }

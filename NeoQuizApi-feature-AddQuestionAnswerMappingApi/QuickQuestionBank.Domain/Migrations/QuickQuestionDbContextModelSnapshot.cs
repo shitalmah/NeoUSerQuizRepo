@@ -235,6 +235,48 @@ namespace QuickQuestionBank.Domain.Migrations
                     b.ToTable("Quiz");
                 });
 
+            modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizOptionAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("OptionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("QuestionTypeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("QuizId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuestionTypeId");
+
+                    b.HasIndex("QuizId");
+
+                    b.ToTable("quizOptionAnswers");
+                });
+
             modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizQuestion", b =>
                 {
                     b.Property<Guid>("Id")
@@ -319,6 +361,48 @@ namespace QuickQuestionBank.Domain.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("QuizQuestionMapping");
+                });
+
+            modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizTextAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AnswerText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("QuestionTypeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("QuizId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuestionTypeId");
+
+                    b.HasIndex("QuizId");
+
+                    b.ToTable("quizTextAnswers");
                 });
 
             modelBuilder.Entity("QuickQuestionBank.Domain.Entities.Role", b =>
@@ -530,7 +614,45 @@ namespace QuickQuestionBank.Domain.Migrations
                     b.Navigation("QuizQuestion");
                 });
 
+            modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizOptionAnswer", b =>
+                {
+                    b.HasOne("QuickQuestionBank.Domain.Entities.QuestionType", "QuestionType")
+                        .WithMany()
+                        .HasForeignKey("QuestionTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuickQuestionBank.Domain.Entities.Quiz", "Quiz_Attempt")
+                        .WithMany()
+                        .HasForeignKey("QuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("QuestionType");
+
+                    b.Navigation("Quiz_Attempt");
+                });
+
             modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizQuestion", b =>
+                {
+                    b.HasOne("QuickQuestionBank.Domain.Entities.QuestionType", "QuestionType")
+                        .WithMany()
+                        .HasForeignKey("QuestionTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuickQuestionBank.Domain.Entities.Quiz", "Quiz_Attempt")
+                        .WithMany()
+                        .HasForeignKey("QuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("QuestionType");
+
+                    b.Navigation("Quiz_Attempt");
+                });
+
+            modelBuilder.Entity("QuickQuestionBank.Domain.Entities.QuizTextAnswer", b =>
                 {
                     b.HasOne("QuickQuestionBank.Domain.Entities.QuestionType", "QuestionType")
                         .WithMany()
